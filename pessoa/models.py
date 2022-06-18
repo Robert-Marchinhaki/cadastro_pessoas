@@ -5,3 +5,5 @@ class Pessoas(models.Model):
   data_nascimento = models.DateField(null=True)
   ativo = models.BooleanField(default=True)
 
+  def __str__(self) -> str:
+    return self.nome_completo
